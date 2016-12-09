@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokedex</title>
+  <style type="text/css">
+    .pokemon{
+      margin-top: 30px;
+    }
+    .pokeimg{
+      width: 40px;
+      height: 30px;
+      background-image: url(/images/montage-icon-20161204.png);
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+    }
+    li{
+      position: relative;
+      display: flex;
+      align-items: center;
+      line-height: 40px;
+      border-bottom: 1px dashed #ddd;
+    }
+    li:last-child{
+      border-bottom: none;
+    }
+    li div{
+      float: left;
+      font-size: 14px;
+      margin-left: 30px;
+    }
+    li .pokeimg{
+      margin-left: 0;
+    }
+    li .spec{
+      min-width: 120px;
+    }
+    li .types{
+      min-width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+  <div class="bymove">
+    <h3>Select By Moves</h3>
+    <input type="text" id="move1" >
+    <input type="text" id="move2" >
+    <input type="text" id="move3" >
+    <input type="text" id="move4" >
+    <button id="findByMove">find</button>
+    <ul id="pokelist"></ul>
+  </div>
+  <script type="text/javascript" src="/scripts/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript" src="/scripts/pokedex.js"></script>
+  <script type="text/javascript" src="/scripts/learnsets.js"></script>
+  <script type="text/javascript" src="/scripts/moves.js"></script>
+  <script type="text/javascript" src="/scripts/type_data.js"></script>
+  <script type="text/javascript" src="/scripts/app.js"></script>
+  <script type="text/javascript" src="/scripts/action2.js"></script>
+</body>
+</html>
